@@ -6,33 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
     >
-
     <RelativeLayout
-        android:layout_width="160dp"
-        android:layout_height="30dp"
         android:id="@+id/b1"
-        >
+        android:layout_width="140dp"
+        android:layout_height="30dp">
         <TextView
-            android:layout_width="160dp"
+            android:layout_width="120dp"
             android:layout_height="30dp"
-            android:text="Главный экран"
+            android:layout_marginLeft="25dp"
             android:gravity="center"
-            android:textColor="#4F5EC5"
-            ></TextView>
+            android:text="Главный экран"
+            android:textColor="#4F5EC5">
+
+        </TextView>
+
         <ImageView
+            android:id="@+id/h1"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
-            android:background="@drawable/home"
             android:layout_marginTop="5dp"
-            ></ImageView>
+            android:background="@drawable/home"></ImageView>
     </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:id="@+id/map1"
+    >
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:enabled="true"
+        >
+
+    </fragment>
+</RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:id="@+id/c1"
-        android:layout_below="@id/b1"
+        android:layout_below="@id/map1"
         android:background="@drawable/fon3"
         >
         <TextView
@@ -44,6 +64,16 @@
             ></TextView>
     </RelativeLayout>
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/c1"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -564,5 +594,6 @@
             android:id="@+id/vremanow111111"
             ></TextView>
     </RelativeLayout>
-
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

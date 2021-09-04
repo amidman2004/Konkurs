@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@color/white"
+        android:id="@+id/pbt"
+
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="логин"
+            android:textColorHint="#1131FF"
+            android:textColor="#1131FF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:outlineAmbientShadowColor="#AE2015"
+            android:id="@+id/login"
+            ></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="пароль"
+            android:textColorHint="#1131FF"
+            android:textColor="#1131FF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:outlineAmbientShadowColor="#AE2015"
+            android:layout_below="@id/login"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            ></EditText>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:backgroundTint="@color/white"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Войти"
+            android:textColor="#1131FF"
+            android:id="@+id/voyti"
+            />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            app:backgroundTint="@color/white"
+            android:layout_below="@id/password"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="180dp"
+            android:text="Отмена"
+            android:textColor="#1131FF"
+            android:id="@+id/otmena"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

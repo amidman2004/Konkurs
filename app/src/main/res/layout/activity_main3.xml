@@ -35,10 +35,9 @@
         <TextView
             android:layout_width="100dp"
             android:layout_height="30dp"
-            android:text=""
+            android:text="Data"
             android:layout_marginLeft="20dp"
             android:textSize="13dp"
-            android:background=""
             android:id="@+id/data"
             android:gravity="center"
             ></TextView>
