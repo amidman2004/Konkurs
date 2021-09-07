@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/ramka_main2"
+    android:id="@+id/zmnl"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Изменение пароля"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/porol"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Введите новый пароль"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_below="@+id/porol"
+        android:id="@+id/porol1"
+        ></TextView>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/porol1"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ramka_main2"
+        android:id="@+id/tabl1"
+        ></EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/tabl1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:text="Заменить"
+        android:textColor="#1131FF"
+        android:id="@+id/voyti"
+        />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:layout_below="@id/tabl1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="215dp"
+        android:text="Отмена"
+        android:textColor="#1131FF"
+        android:id="@+id/otmena"
+        />
+</RelativeLayout>
