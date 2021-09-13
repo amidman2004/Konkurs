@@ -45,12 +45,14 @@ class MainActivity4 : AppCompatActivity() {
         }
 
 poses_history.setOnClickListener {
-
+startActivity(Intent(this,MainActivity5::class.java))
 }
         nazad.setOnClickListener {
             startActivity(Intent(this, tipoglavniy ::class.java))
         }
-
+o_mne.setOnClickListener {
+    startActivity(Intent(this, MainActivity6::class.java))
+}
 
     }
 }

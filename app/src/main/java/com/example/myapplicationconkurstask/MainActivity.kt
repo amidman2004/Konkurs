@@ -58,24 +58,7 @@ class MainActivity : AppCompatActivity() {
                    startActivity(Intent(this, tipoglavniy::class.java))
 
 
-                   scope.launch(Dispatchers.IO) {
-                                       val user = JSONObject()
-                                       user.put("login", dialogLayout.login.text)
-                                       user.put("pwd", dialogLayout.password.text)
-                                       (URL("http://10.0.3.2:3000/login").openConnection() as HttpURLConnection).run {
-                                           requestMethod = "POST"
-                                           doOutput = true
-                                           addRequestProperty("Content-Type", "application/json")
-                                           val stream = outputStream
-                                           stream.write(user.toString(0).toByteArray())
-                                           stream.close()
-                                           connect()
-                                           val code = responseCode
-                                           if (code == 200) {
-                                               startActivity(Intent(this@MainActivity, MainActivity2::class.java))
-                                           }
-                                       }
-                                   }
+
 
            }
             dialogLayout.otmena.setOnClickListener {
@@ -85,8 +68,6 @@ class MainActivity : AppCompatActivity() {
         }
         }
         }
-
-
 
 
 

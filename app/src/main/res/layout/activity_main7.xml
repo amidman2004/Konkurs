@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity6">
+    tools:context=".MainActivity7">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -19,7 +19,7 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
             android:layout_marginLeft="30dp"
-            android:id="@+id/glavn"
+            android:id="@+id/glavn1"
             android:background="@drawable/home_vlt"
             ></ImageView>
         <TextView
@@ -40,7 +40,7 @@
             android:layout_marginBottom="35dp"
             android:layout_marginLeft="30dp"
             android:background="@drawable/listic"
-            android:layout_toRightOf="@id/glavn"
+            android:layout_toRightOf="@id/glavn1"
             android:id="@+id/plat"
             ></ImageView>
         <TextView
@@ -134,77 +134,143 @@
             android:background="@drawable/logout"
             ></ImageView>
     </RelativeLayout>
+    //////////////////////////
 
     <RelativeLayout
+        android:id="@+id/card"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="300dp"
         android:layout_below="@id/verh"
-        android:id="@+id/rlt1"
+        android:background="#EDD9F1">
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="190dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/krug_ramka">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="30dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:id="@+id/nomer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="70dp"
+                android:text="1234111143211"
+                android:textColor="@color/black"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:id="@+id/red"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/nomer1"
+                android:layout_marginLeft="20dp"
+                android:text="Карта заблокирована"
+                android:textColor="@color/white"
+                android:textSize="25dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="130dp"
+                android:text="22000 рублей"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="130dp"
+                android:background="@drawable/mir"></ImageView>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_red1"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="245dp"
+            android:backgroundTint="#ff21"
+            android:gravity="center"
+            android:text="ПОПОЛНИТЬ"></Button>
+
+        <Button
+            android:id="@+id/btn_green1"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="245dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#58FF11"
+            android:gravity="center"
+            android:text="ПЕРЕВЕСТИ"></Button>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/card"
+        android:id="@+id/poses_history1"
         >
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text=""
-            android:id="@+id/text1"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="История операций"
+            android:layout_centerVertical="true"
             android:textColor="@color/black"
-            android:textSize="10dp"
-            ></TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:id="@+id/vrm1"
-            android:layout_toRightOf="@id/text1"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/history1"
             ></TextView>
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Мобильное приложение World Skolls Online"
-        android:layout_below="@id/verh"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/mob_app"
-        ></TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/poses_history1"
+        android:id="@+id/zablock1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Заблокировать"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/zabl1"
+            ></TextView>
+    </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/zablock1"
+        android:id="@+id/rename1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Переименовать"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/rnm1"
+            ></TextView>
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Версия 1.0.0"
-        android:layout_below="@id/mob_app"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/vers"
-        ></TextView>
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Пользовательское соглашение"
-        android:layout_marginTop="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/vers"
-        android:id="@+id/ssilka"
-        ></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Разработано Воронковым Дмитрием Андреевичем"
-        android:layout_above="@id/niz"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        ></TextView>
 
 </RelativeLayout>

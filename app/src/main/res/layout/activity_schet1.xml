@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity6">
+    tools:context=".schet1">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -13,15 +13,15 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/black"
         >
+
         <ImageView
+            android:id="@+id/glavn4"
             android:layout_width="70dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/glavn"
-            android:background="@drawable/home_vlt"
-            ></ImageView>
+            android:background="@drawable/home_vlt"></ImageView>
         <TextView
             android:layout_width="80dp"
             android:layout_height="20dp"
@@ -40,7 +40,7 @@
             android:layout_marginBottom="35dp"
             android:layout_marginLeft="30dp"
             android:background="@drawable/listic"
-            android:layout_toRightOf="@id/glavn"
+            android:layout_toRightOf="@id/glavn4"
             android:id="@+id/plat"
             ></ImageView>
         <TextView
@@ -114,17 +114,16 @@
             android:id="@+id/vihod"
             android:background="@drawable/home_vlt"
             ></ImageView>
+
         <TextView
+            android:id="@+id/ET"
             android:layout_width="270dp"
             android:layout_height="match_parent"
-            android:text="Дмитрий Андреевич"
             android:layout_toRightOf="@id/vihod"
-            android:id="@+id/ET"
             android:gravity="center"
+            android:text="Дмитрий Андреевич"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            >
-        </TextView>
+            android:textSize="20dp"></TextView>
 
         <ImageView
             android:layout_width="60dp"
@@ -136,75 +135,73 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/pink"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="300dp"
         android:layout_below="@id/verh"
-        android:id="@+id/rlt1"
-        >
+        android:background="#ECC1ED"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/nuzno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:text="Текущий счёт"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:text=""
-            android:id="@+id/text1"
-            android:textColor="@color/black"
-            android:textSize="10dp"
-            ></TextView>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="130dp"
+            android:text="11000,00 рублей"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="20dp"
-            android:id="@+id/vrm1"
-            android:layout_toRightOf="@id/text1"
-            android:layout_marginLeft="20dp"
-            ></TextView>
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="200dp"
+            android:text="111111123456"
+            android:textColor="@color/white"
+            android:textSize="15dp"></TextView>
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Мобильное приложение World Skolls Online"
-        android:layout_below="@id/verh"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/mob_app"
-        ></TextView>
+    <RelativeLayout
+        android:id="@+id/poses_history4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/pink">
 
+        <TextView
+            android:id="@+id/history3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="История операций"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Версия 1.0.0"
-        android:layout_below="@id/mob_app"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/vers"
-        ></TextView>
+    <RelativeLayout
+        android:id="@+id/rename4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/poses_history4">
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Пользовательское соглашение"
-        android:layout_marginTop="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/vers"
-        android:id="@+id/ssilka"
-        ></TextView>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="14dp"
-        android:textColor="@color/black"
-        android:text="Разработано Воронковым Дмитрием Андреевичем"
-        android:layout_above="@id/niz"
-        android:layout_marginTop="80dp"
-        android:layout_centerHorizontal="true"
-        ></TextView>
-
+        <TextView
+            android:id="@+id/rnm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="Переименовать"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
 </RelativeLayout>

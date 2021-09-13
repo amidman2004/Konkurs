@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@drawable/krug_ramka"
+        android:id="@+id/izm2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:text="Переименование карты"
+            android:layout_marginTop="25dp"
+            android:id="@+id/bltext2"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:text="Введите новое названиие карты"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/bltext2"
+            android:gravity="center"
+            android:id="@+id/bltext12"
+            ></TextView>
+        <EditText
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/bltext12"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ramka_main2"
+            android:hint="    Имя"
+            android:id="@+id/izmenit2"
+            ></EditText>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/izmenit2"
+            android:layout_alignParentBottom="true"
+            android:text="Отмена"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/otmnizm2"
+            ></Button>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/izmenit2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:text="Изменить"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:backgroundTint="@color/white"
+            android:id="@+id/izmenitbtn2"
+            android:onClick="Izmena"
+            ></Button>
+
+    </RelativeLayout>
+</RelativeLayout>
