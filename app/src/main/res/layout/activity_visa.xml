@@ -17,9 +17,9 @@
         <ImageView
             android:id="@+id/glavn2"
             android:layout_width="70dp"
-            android:layout_marginTop="15dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
             android:background="@drawable/home_vlt"></ImageView>
         <TextView
@@ -33,16 +33,16 @@
             android:layout_marginLeft="25dp"
             android:id="@+id/glavn_text"
             ></TextView>
+
         <ImageView
+            android:id="@+id/plat1"
             android:layout_width="70dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/listic"
             android:layout_toRightOf="@id/glavn2"
-            android:id="@+id/plat"
-            ></ImageView>
+            android:background="@drawable/listic"></ImageView>
         <TextView
             android:layout_width="85dp"
             android:layout_height="20dp"
@@ -63,7 +63,7 @@
             android:layout_marginLeft="35dp"
             android:id="@+id/histr"
             android:background="@drawable/chasi"
-            android:layout_toRightOf="@id/plat"
+            android:layout_toRightOf="@id/plat1"
             ></ImageView>
         <TextView
             android:layout_width="80dp"
@@ -114,17 +114,16 @@
             android:id="@+id/vihod"
             android:background="@drawable/home_vlt"
             ></ImageView>
+
         <TextView
+            android:id="@+id/ET"
             android:layout_width="270dp"
             android:layout_height="match_parent"
-            android:text="Дмитрий Андреевич"
             android:layout_toRightOf="@id/vihod"
-            android:id="@+id/ET"
             android:gravity="center"
+            android:text="Дмитрий Андреевич"
             android:textColor="@color/black"
-            android:textSize="20dp"
-            >
-        </TextView>
+            android:textSize="20dp"></TextView>
 
         <ImageView
             android:layout_width="60dp"
@@ -205,22 +204,21 @@
         </RelativeLayout>
 
         <Button
+            android:id="@+id/btn_red2"
             android:layout_width="140dp"
             android:layout_height="55dp"
-            android:layout_marginTop="245dp"
             android:layout_marginLeft="35dp"
+            android:layout_marginTop="245dp"
             android:backgroundTint="#ff21"
-            android:id="@+id/btn_green2"
-            android:text="ПОПОЛНИТЬ"
             android:gravity="center"
-            ></Button>
+            android:text="ПОПОЛНИТЬ"></Button>
         <Button
             android:layout_width="140dp"
             android:layout_height="55dp"
             android:layout_marginTop="245dp"
             android:layout_marginLeft="35dp"
             android:backgroundTint="#58FF11"
-            android:id="@+id/btn_red2"
+            android:id="@+id/btn_green2"
             android:text="ПЕРЕВЕСТИ"
             android:gravity="center"
             android:layout_alignParentRight="true"

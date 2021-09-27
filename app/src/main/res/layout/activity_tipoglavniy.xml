@@ -439,51 +439,51 @@
                     android:textSize="25dp"></TextView>
             </RelativeLayout>
             ///////////////////////////////////////
+
             <RelativeLayout
+                android:id="@+id/credit1"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:id="@+id/credit1"
-                android:layout_below="@id/my_credit"
-                >
+                android:layout_below="@id/my_credit">
+
                 <TextView
+                    android:id="@+id/credit_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="Кредит наличными"
                     android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:layout_marginLeft="10dp"
-                    android:id="@+id/credit_text"
-                    ></TextView>
+                    android:textSize="18dp"></TextView>
+
                 <TextView
+                    android:id="@+id/credit_text_niz"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/credit_text"
-                    android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:text="Платёж"
                     android:layout_marginLeft="10dp"
-                    android:id="@+id/credit_text_niz"
-                    ></TextView>
+                    android:text="Платёж"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"></TextView>
+
                 <TextView
+                    android:id="@+id/credit_text_data"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/credit_text_data"
+                    android:layout_below="@id/credit_text"
+                    android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@id/credit_text_niz"
                     android:text="current_date"
-                    android:layout_below="@id/credit_text"
                     android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:layout_marginLeft="10dp"
-                    ></TextView>
+                    android:textSize="18dp"></TextView>
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
                     android:text="5000 рублей"
                     android:textColor="@color/black"
-                    android:textSize="18dp"
-                    android:layout_marginTop="15dp"
-                    ></TextView>
+                    android:textSize="18dp"></TextView>
             </RelativeLayout>
             ////////////////////////////////////////////
             <RelativeLayout

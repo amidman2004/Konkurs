@@ -12,14 +12,14 @@
         android:background="@drawable/fon1"
         android:id="@+id/joke"
         ></ImageView>
+
     <ImageView
+        android:id="@+id/msm"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:background="@drawable/musei"
-        android:layout_marginTop="59dp"
         android:layout_marginLeft="29dp"
-        android:id="@+id/msm"
-        ></ImageView>
+        android:layout_marginTop="59dp"
+        android:background="@drawable/musei"></ImageView>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -31,94 +31,109 @@
         android:layout_marginLeft="10dp"
         android:id="@+id/worldskills"
         ></TextView>
+
     <RelativeLayout
+        android:id="@+id/white"
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:layout_below="@+id/worldskills"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_below="@+id/worldskills"
-        android:id="@+id/white"
-        android:background="@drawable/fon_white"
-        >
+        android:background="@drawable/fon_white">
+
         <ImageView
+            android:id="@+id/metk"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/metka_vlt"
-            android:layout_marginTop="37dp"
             android:layout_marginLeft="15dp"
-            android:id="@+id/metk"
-            ></ImageView>
-        <TextView
             android:layout_marginTop="37dp"
+            android:background="@drawable/metka_vlt"></ImageView>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="37dp"
             android:layout_toRightOf="@id/metk"
             android:text="Отделения и банкоматы"
             android:textColor="#000000"
-            android:textSize="20dp"
-            android:layout_marginLeft="10dp"
-            ></TextView>
+            android:textSize="20dp"></TextView>
     </RelativeLayout>
+
     <RelativeLayout
+        android:id="@+id/rlt"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:background="@drawable/fon_white"
         android:layout_below="@+id/white"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
-        android:id="@+id/rlt"
-        >
+        android:layout_marginRight="15dp"
+        android:background="@drawable/fon_white">
+
         <ImageView
+            android:id="@+id/menalka1"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:background="@drawable/menalka"
-            android:layout_marginTop="17dp"
             android:layout_marginLeft="12dp"
-            android:id="@+id/menalka1"
-            ></ImageView>
-        <TextView
             android:layout_marginTop="17dp"
-            android:layout_width="match_parent"
+            android:background="@drawable/menalka"></ImageView>
+
+        <TextView
+            android:id="@+id/curs"
+            android:layout_width="wrap_content"
             android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="17dp"
             android:layout_toRightOf="@id/menalka1"
             android:text="Курсы валют"
             android:textColor="#000000"
-            android:textSize="20dp"
-            android:layout_marginLeft="10dp"
-            ></TextView>
+            android:textSize="20dp"></TextView>
+
         <TextView
-            android:layout_width="30dp"
-            android:layout_height="20dp"
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="30dp"
-            android:text="USD"
-            android:textColor="#000000"
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="17dp"
+            android:layout_toRightOf="@id/curs" />
+
+        <TextView
             android:id="@+id/USD"
-            ></TextView>
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:text="USD"
+            android:textColor="#000000"></TextView>
+
         <TextView
             android:layout_width="30dp"
             android:layout_height="20dp"
-            android:layout_marginTop="80dp"
             android:layout_marginLeft="5dp"
-            android:text=""
+            android:layout_marginTop="80dp"
             android:layout_toRightOf="@id/USD"
+            android:text=""
+            android:id="@+id/USD_value"
+            android:textColor="@color/black"
             ></TextView>
+
         <TextView
+            android:id="@+id/EUR"
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_marginLeft="290dp"
             android:layout_marginTop="80dp"
-            android:textColor="#000000"
             android:text="EUR"
-            android:id="@+id/EUR"
-            ></TextView>
+            android:textColor="#000000"></TextView>
+
         <TextView
             android:layout_width="30dp"
             android:layout_height="20dp"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="80dp"
             android:layout_toRightOf="@id/EUR"
+            android:id="@+id/EUR_value"
+            android:textColor="@color/black"
             ></TextView>
 
     </RelativeLayout>

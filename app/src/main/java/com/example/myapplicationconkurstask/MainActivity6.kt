@@ -16,6 +16,9 @@ class MainActivity6 : AppCompatActivity() {
             val i = Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/"))
             startActivity(i)
         }
+            plat5.setOnClickListener {
+                startActivity(Intent(this, shablonActivity::class.java))
+            }
 
     }
 }

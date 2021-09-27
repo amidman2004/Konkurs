@@ -14,26 +14,26 @@
         android:layout_alignParentBottom="true"
         android:backgroundTint="@color/black"
         >
+
         <ImageView
+            android:id="@+id/glavn14"
             android:layout_width="70dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
-            android:layout_marginLeft="30dp"
-            android:id="@+id/glavn3"
-            android:background="@drawable/home_vlt"
-            ></ImageView>
+            android:background="@drawable/home_vlt"></ImageView>
+
         <TextView
+            android:id="@+id/glavn_text"
             android:layout_width="80dp"
             android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="85dp"
+            android:backgroundTint="@color/white"
             android:text="Главная"
             android:textColor="@color/white"
-            android:backgroundTint="@color/white"
-            android:textSize="20dp"
-            android:layout_marginTop="85dp"
-            android:layout_marginLeft="25dp"
-            android:id="@+id/glavn_text"
-            ></TextView>
+            android:textSize="20dp"></TextView>
         <ImageView
             android:layout_width="70dp"
             android:layout_height="match_parent"
@@ -41,8 +41,8 @@
             android:layout_marginBottom="35dp"
             android:layout_marginLeft="30dp"
             android:background="@drawable/listic"
-            android:layout_toRightOf="@id/glavn3"
-            android:id="@+id/plat"
+            android:layout_toRightOf="@id/glavn14"
+            android:id="@+id/plat16"
             ></ImageView>
         <TextView
             android:layout_width="85dp"
@@ -64,7 +64,7 @@
             android:layout_marginLeft="35dp"
             android:id="@+id/histr"
             android:background="@drawable/chasi"
-            android:layout_toRightOf="@id/plat"
+            android:layout_toRightOf="@id/plat16"
             ></ImageView>
         <TextView
             android:layout_width="80dp"
@@ -296,6 +296,7 @@
                     android:textColor="@color/white"
                     android:textSize="15dp"></TextView>
             </RelativeLayout>
+
             <RelativeLayout
                 android:id="@+id/card11"
                 android:layout_width="300dp"
@@ -304,7 +305,7 @@
                 android:background="@drawable/krug_ramka">
 
                 <TextView
-                    android:id="@+id/name"
+                    android:id="@+id/name11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
@@ -362,7 +363,7 @@
                 android:background="@drawable/krug_ramka">
 
                 <TextView
-                    android:id="@+id/name2"
+                    android:id="@+id/name12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"
@@ -423,8 +424,9 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/krug_ramka">
+
                 <TextView
-                    android:id="@+id/name3"
+                    android:id="@+id/name13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="40dp"

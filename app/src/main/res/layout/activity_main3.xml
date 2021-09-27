@@ -10,13 +10,13 @@
         android:layout_height="30dp"
         android:id="@+id/b1"
         >
+
         <TextView
             android:layout_width="160dp"
             android:layout_height="30dp"
-            android:text="Главный экран"
             android:gravity="center"
-            android:textColor="#4F5EC5"
-            ></TextView>
+            android:text="Главный экран"
+            android:textColor="#4F5EC5"></TextView>
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"

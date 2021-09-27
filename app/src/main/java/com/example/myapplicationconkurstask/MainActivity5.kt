@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main4.*
+import kotlinx.android.synthetic.main.activity_main4.vihod
+import kotlinx.android.synthetic.main.activity_main5.*
 
 class MainActivity5 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,5 +14,8 @@ class MainActivity5 : AppCompatActivity() {
         vihod.setOnClickListener {
             startActivity(Intent(this, tipoglavniy::class.java))
         }
+            plat4.setOnClickListener {
+                startActivity(Intent(this, shablonActivity::class.java))
+            }
     }
 }

@@ -6,11 +6,13 @@ import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
 import app.com.kotlinapp.OnSwipeTouchListener
 import kotlinx.android.synthetic.main.activity_main2.*
 import kotlinx.android.synthetic.main.activity_main7.*
 import kotlinx.android.synthetic.main.activity_main7.card
 import kotlinx.android.synthetic.main.activity_master.*
+import kotlinx.android.synthetic.main.activity_visa.*
 import kotlinx.android.synthetic.main.renaming.*
 import kotlinx.android.synthetic.main.renaming.view.*
 import kotlinx.android.synthetic.main.zablock_layout.view.*
@@ -79,6 +81,10 @@ class MainActivity7 : AppCompatActivity() {
                 poses_history1.isClickable = false
                 zablock1.isClickable = false
                 rename1.isClickable = false
+                btn_green1.isClickable = false
+                btn_green1.isVisible = false
+                btn_red1.isClickable = false
+                btn_red1.isVisible = false
             }
         }
 
@@ -111,6 +117,23 @@ class MainActivity7 : AppCompatActivity() {
 
 btn_red1.setOnClickListener {
     startActivity(Intent(this,popolnitActivity::class.java))
+    mir1 = 1
+    visa11 = 0
+    master111 = 0
+    polmir=1
+    polvisa=0
+    polmaster = 0
 }
+        btn_green1.setOnClickListener {
+        startActivity(Intent(this,perevestiActivity::class.java))
+            permir = 1
+            pervisa = 0
+            permaster = 0
+        }
+
+        plat3.setOnClickListener {
+            startActivity(Intent(this, shablonActivity::class.java))
+        }
+
     }
 }

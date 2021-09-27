@@ -8,6 +8,8 @@ import androidx.appcompat.app.AlertDialog
 import kotlinx.android.synthetic.main.activity_hutorok.view.*
 import kotlinx.android.synthetic.main.activity_main4.*
 
+import kotlinx.android.synthetic.main.activity_tipoglavniy.*
+
 class MainActivity4 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,6 +55,9 @@ startActivity(Intent(this,MainActivity5::class.java))
 o_mne.setOnClickListener {
     startActivity(Intent(this, MainActivity6::class.java))
 }
+        plat0.setOnClickListener {
+            startActivity(Intent(this, shablonActivity::class.java))
+        }
 
     }
 }

@@ -6,10 +6,12 @@ import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.appcompat.app.AlertDialog
+import androidx.core.view.isVisible
 import app.com.kotlinapp.OnSwipeTouchListener
 import kotlinx.android.synthetic.main.activity_main7.*
 import kotlinx.android.synthetic.main.activity_main7.card
 import kotlinx.android.synthetic.main.activity_master.*
+import kotlinx.android.synthetic.main.activity_popolnenie_vibor.*
 import kotlinx.android.synthetic.main.activity_tipoglavniy.*
 import kotlinx.android.synthetic.main.activity_visa.*
 import kotlinx.android.synthetic.main.renaming.view.*
@@ -53,6 +55,7 @@ class MasterActivity : AppCompatActivity() {
         }
 
 
+
         zablock3.setOnClickListener {
             val builder = AlertDialog.Builder(this)
             val inflater = layoutInflater
@@ -73,6 +76,11 @@ class MasterActivity : AppCompatActivity() {
                 poses_history3.isClickable = false
                 zablock3.isClickable = false
                 rename3.isClickable = false
+
+                btn_green3.isClickable = false
+                btn_green3.isVisible = false
+                btn_red3.isClickable = false
+                btn_red3.isVisible = false
             }
         }
 
@@ -102,6 +110,25 @@ class MasterActivity : AppCompatActivity() {
             startActivity(Intent(this, tipoglavniy::class.java))
         }
 
+        btn_red3.setOnClickListener {
+            startActivity(Intent(this,popolnitActivity::class.java))
+            mir1 = 0
+            visa11 = 0
+            master111 = 1
+            polmir=0
+            polvisa=0
+            polmaster = 1
+        }
+
+        btn_green3.setOnClickListener {
+            startActivity(Intent(this,perevestiActivity::class.java))
+            permir = 0
+            pervisa = 0
+            permaster = 1
+        }
+            plat2.setOnClickListener {
+                startActivity(Intent(this, shablonActivity::class.java))
+            }
 
 
     }

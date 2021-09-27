@@ -62,6 +62,9 @@ class schet3 : AppCompatActivity() {
         poses_history6.setOnClickListener {
             startActivity(Intent(this, schet3history::class.java))
         }
+plat8.setOnClickListener {
+    startActivity(Intent(this, shablonActivity::class.java))
+}
 
     }
 }

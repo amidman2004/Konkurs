@@ -7,6 +7,7 @@
          location permissions for the "MyLocation" functionality.
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
@@ -16,7 +17,29 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyApplicationConkursTask">
+        android:theme="@style/Theme.MyApplicationConkursTask"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Poisk"
+            android:exported="true" />
+        <activity
+            android:name=".vse_shabloni"
+            android:exported="true" />
+        <activity
+            android:name=".spisokActivity"
+            android:exported="true" />
+        <activity
+            android:name=".shablonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".perevesti2Activity"
+            android:exported="true" />
+        <activity
+            android:name=".perevestiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".popolnenie_vibor"
+            android:exported="true" />
         <activity
             android:name=".popolnitActivity"
             android:exported="true" />

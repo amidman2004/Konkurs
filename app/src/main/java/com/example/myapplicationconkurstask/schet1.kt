@@ -47,6 +47,7 @@ class schet1 : AppCompatActivity() {
         }
         glavn4.setOnClickListener{
             startActivity(Intent(this, tipoglavniy::class.java))
+
         }
         pink.setOnTouchListener(object : OnSwipeTouchListener(this) {
             override fun onSwipeLeft() {
@@ -57,8 +58,12 @@ class schet1 : AppCompatActivity() {
 
             }
         })
+
         poses_history4.setOnClickListener {
             startActivity(Intent(this, schet1history::class.java))
+        }
+        plat6.setOnClickListener {
+            startActivity(Intent(this, shablonActivity::class.java))
         }
     }
 }

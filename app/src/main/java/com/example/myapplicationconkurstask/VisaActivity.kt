@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.core.view.isVisible
 import app.com.kotlinapp.OnSwipeTouchListener
 import kotlinx.android.synthetic.main.activity_main7.*
 import kotlinx.android.synthetic.main.activity_main7.card
@@ -75,6 +76,11 @@ class VisaActivity : AppCompatActivity() {
                 poses_history2.isClickable = false
                 zablock2.isClickable = false
                 rename2.isClickable = false
+                btn_green2.isClickable = false
+                btn_green2.isVisible = false
+                btn_red2.isClickable = false
+                btn_red2.isVisible = false
+
             }}
 
             rename2.setOnClickListener {
@@ -100,6 +106,25 @@ class VisaActivity : AppCompatActivity() {
             glavn2.setOnClickListener{
                 startActivity(Intent(this, tipoglavniy::class.java))
             }
+
+        btn_red2.setOnClickListener {
+            startActivity(Intent(this,popolnitActivity::class.java))
+            mir1 = 0
+            visa11 = 1
+            master111 = 0
+            polmir=0
+            polvisa=1
+            polmaster = 0
+        }
+        btn_green2.setOnClickListener {
+            startActivity(Intent(this,perevestiActivity::class.java))
+            permir = 0
+            pervisa = 1
+            permaster = 0
+        }
+        plat1.setOnClickListener {
+            startActivity(Intent(this, shablonActivity::class.java))
+        }
 
         }
     }

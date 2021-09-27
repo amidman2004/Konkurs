@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".popolnenie_vibor"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/verh"
+        android:background="@drawable/ramka_main2"
+        >
+
+        <ImageView
+            android:id="@+id/vihodd"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_vlt"></ImageView>
+
+        <TextView
+            android:id="@+id/ET"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/vihodd"
+            android:gravity="center"
+            android:text="Дмитрий Андреевич"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:id="@+id/vhod"
+            android:layout_toRightOf="@id/ET"
+            android:background="@drawable/logout"
+            ></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/otpravitel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/verh"
+        android:background="#E8E6E6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Карта оправителя"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+    </RelativeLayout>
+
+    //MIR
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/otpravitel"
+        android:id="@+id/miir"
+        android:visibility="invisible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/pl1"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/pl1"
+            android:layout_marginTop="10dp"
+            android:text="123411114321"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="12000 рублей"
+            ></TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mir"
+            android:layout_centerInParent="true"
+            ></ImageView>
+    </RelativeLayout>
+
+    //VISA
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/otpravitel"
+        android:id="@+id/viisa"
+        android:visibility="invisible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/pl2"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/pl2"
+            android:layout_marginTop="10dp"
+            android:text="123411114321"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="12000 рублей"
+            ></TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/visa"
+            android:layout_centerInParent="true"
+            ></ImageView>
+    </RelativeLayout>
+
+    //MASTER
+
+    <RelativeLayout
+        android:id="@+id/maaster"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/otpravitel"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/pl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pl3"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="123411114321"
+            android:textColor="@color/black"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="12000 рублей"></TextView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mastercard"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/poluchatel"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/maaster"
+        android:background="#E8E6E6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:text="Карта получателя"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+    </RelativeLayout>
+
+    //MIR
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/poluchatel"
+        android:id="@+id/miir1"
+        android:visibility="invisible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/pl11"
+            ></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/pl11"
+            android:layout_marginTop="10dp"
+            android:text="123411114321"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="12000 рублей"
+            ></TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/mir"
+            android:layout_centerInParent="true"
+            ></ImageView>
+    </RelativeLayout>
+
+    //VISA
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/poluchatel"
+        android:id="@+id/viisa1"
+        android:visibility="invisible"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/pl12"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pl12"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="123411114321"
+            android:textColor="@color/black"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="12000 рублей"
+            ></TextView>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@drawable/visa"
+            android:layout_centerInParent="true"
+            ></ImageView>
+    </RelativeLayout>
+
+    //MASTER
+
+    <RelativeLayout
+        android:id="@+id/maaster1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/poluchatel"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/pl13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pl13"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="123411114321"
+            android:textColor="@color/black"
+            android:textSize="14dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="12000 рублей"></TextView>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/mastercard"></ImageView>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/summa1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/ramka"
+        android:hint="    ВВЕДИТЕ СУММУ"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        ></EditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/oplatit1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/summa1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="#117CFF"
+        android:text="ОПЛАТИТЬ"
+        android:textColor="#FFFFFF"></androidx.appcompat.widget.AppCompatButton>
+
+</RelativeLayout>

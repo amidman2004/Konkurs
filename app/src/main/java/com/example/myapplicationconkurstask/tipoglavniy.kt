@@ -135,7 +135,9 @@ mir_cardRL.setOnClickListener {
         zmn2.text = ""
         zmn2.append(r2)
 
-
+histr.setOnClickListener {
+    startActivity(Intent(this, Poisk::class.java))
+}
         bill1RL.setOnClickListener {
             startActivity(Intent(this,schet1::class.java))
         }
@@ -145,6 +147,8 @@ mir_cardRL.setOnClickListener {
         bill3RL.setOnClickListener {
             startActivity(Intent(this,schet3::class.java))
         }
-
+       plat.setOnClickListener {
+           startActivity(Intent(this, shablonActivity::class.java))
+       }
     }
 }

@@ -33,16 +33,16 @@
             android:layout_marginLeft="25dp"
             android:id="@+id/glavn_text"
             ></TextView>
+
         <ImageView
+            android:id="@+id/plat14"
             android:layout_width="70dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/listic"
             android:layout_toRightOf="@id/glavn"
-            android:id="@+id/plat"
-            ></ImageView>
+            android:background="@drawable/listic"></ImageView>
         <TextView
             android:layout_width="85dp"
             android:layout_height="20dp"
@@ -63,7 +63,7 @@
             android:layout_marginLeft="35dp"
             android:id="@+id/histr"
             android:background="@drawable/chasi"
-            android:layout_toRightOf="@id/plat"
+            android:layout_toRightOf="@id/plat14"
             ></ImageView>
         <TextView
             android:layout_width="80dp"

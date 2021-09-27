@@ -33,16 +33,16 @@
             android:layout_marginLeft="25dp"
             android:id="@+id/glavn_text"
             ></TextView>
+
         <ImageView
+            android:id="@+id/plat2"
             android:layout_width="70dp"
             android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="35dp"
-            android:layout_marginLeft="30dp"
-            android:background="@drawable/listic"
             android:layout_toRightOf="@id/glavn3"
-            android:id="@+id/plat"
-            ></ImageView>
+            android:background="@drawable/listic"></ImageView>
         <TextView
             android:layout_width="85dp"
             android:layout_height="20dp"
@@ -63,7 +63,7 @@
             android:layout_marginLeft="35dp"
             android:id="@+id/histr"
             android:background="@drawable/chasi"
-            android:layout_toRightOf="@id/plat"
+            android:layout_toRightOf="@id/plat2"
             ></ImageView>
         <TextView
             android:layout_width="80dp"
@@ -196,27 +196,26 @@
         </RelativeLayout>
 
         <Button
-            android:layout_width="140dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="245dp"
-            android:layout_marginLeft="35dp"
-            android:backgroundTint="#ff21"
-            android:id="@+id/btn_green3"
-            android:text="ПОПОЛНИТЬ"
-            android:gravity="center"
-            ></Button>
-        <Button
-            android:layout_width="140dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="245dp"
-            android:layout_marginLeft="35dp"
-            android:backgroundTint="#58FF11"
             android:id="@+id/btn_red3"
-            android:text="ПЕРЕВЕСТИ"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="245dp"
+            android:backgroundTint="#ff21"
             android:gravity="center"
+            android:text="ПОПОЛНИТЬ"></Button>
+
+        <Button
+            android:id="@+id/btn_green3"
+            android:layout_width="140dp"
+            android:layout_height="55dp"
             android:layout_alignParentRight="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="245dp"
             android:layout_marginRight="35dp"
-            ></Button>
+            android:backgroundTint="#58FF11"
+            android:gravity="center"
+            android:text="ПЕРЕВЕСТИ"></Button>
 
     </RelativeLayout>
 
