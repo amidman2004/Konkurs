@@ -3,14 +3,12 @@ package com.example.myapplicationconkurstask
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.location.Location
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextClock
+import android.widget.RelativeLayout
 import android.widget.TextView
-import android.widget.Toast
-import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat
+import androidx.core.view.size
 import com.example.myapplicationconkurstask.databinding.ActivityMapsBinding
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
@@ -21,9 +19,14 @@ import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.material.timepicker.TimeFormat
 import kotlinx.android.synthetic.main.activity_main2.*
-import java.sql.Time
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.launch
+import org.json.JSONArray
+import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -31,15 +34,53 @@ import java.util.*
 
 class MainActivity2 : AppCompatActivity(), OnMapReadyCallback {
 
+    fun getJson(timeO:TextView, adress: TextView, response:String, tag:Int){
+        val developerArray = JSONArray(response) //   Преобразует данные ответа в массив JSON
+            // Get single JSON object node
+            val mItemObject: JSONObject = developerArray.getJSONObject(tag)
+            // Get String value from json object
+            val parsed = mItemObject.getString("name")
+            val timeOt =mItemObject.getString("time_from")
+        val timeDo = mItemObject.getString("time_to")
+            adress.text = parsed
+        val formatter = SimpleDateFormat("hh:mm")
+        var time1 = formatter.format(Date(timeOt.toLong()))
+        var time2 = formatter.format(Date(timeDo.toLong()))
+            timeO.text = "$time1 - $time2"
+    }
+
     private lateinit var mMap: GoogleMap
     private lateinit var binding: ActivityMapsBinding
     private lateinit var lastLocation: Location
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    private val scope = MainScope()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
+
+scope.launch(Dispatchers.IO) {
+    (URL("http://10.0.3.2:3000/bankomats").openConnection() as HttpURLConnection).run {
+        requestMethod = "GET"
+        doInput = true
+        connect()
+        val stream = inputStream
+        val response = stream.bufferedReader().readText()
+        for(i in 0 until  sp.size){
+            getJson((sp.getChildAt(i) as RelativeLayout).getChildAt(4) as TextView,(sp.getChildAt(i) as RelativeLayout).getChildAt(0) as TextView, response, i)
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
         b1.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

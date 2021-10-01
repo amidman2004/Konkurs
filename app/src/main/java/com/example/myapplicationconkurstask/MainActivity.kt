@@ -91,7 +91,6 @@ class MainActivity : AppCompatActivity() {
                         stream.write(user.toString(0).toByteArray())
                         stream.close()
                         connect()
-
                         val code = responseCode
                         if (code == 201 || code == 404) {
                             startActivity(Intent(this@MainActivity, tipoglavniy::class.java))
@@ -106,7 +105,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         }
-        msm.setOnClickListener {
+
         scope.launch(Dispatchers.Default) {
             var i = 0
             i.toString()
@@ -116,20 +115,18 @@ class MainActivity : AppCompatActivity() {
                     val response = inputStream.bufferedReader().readText()
 
                     val dollar = getValute("R01235", response.byteInputStream())
-
                     val euro = getValute("R01239", response.byteInputStream())
                     EUR_value.text = euro
                     USD_value.text = dollar
 
             }
         }
-    }
+
 }
     val factory = XmlPullParserFactory.newInstance()
 
     fun getValute(id: String, inputStream: InputStream): String {
         val parser = factory.newPullParser()
-
         parser.setInput(inputStream, null)
         while (parser.getEventType() != XmlPullParser.END_DOCUMENT) {
             parser.next()
